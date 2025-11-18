@@ -1,0 +1,15 @@
+.button{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: inherit;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+:host([class = content__card__select__button]){
+    color: blue;
+}

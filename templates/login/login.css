@@ -1,0 +1,12 @@
+.login__container{
+    border: 1px solid red;
+    width: 400px;
+    max-width: 100%;
+}
+
+.login__content{
+    border: 1px solid blue;
+}
+.login__button{
+    border: 1px solid green;
+}

@@ -1,0 +1,20 @@
+.link{
+    text-decoration: none;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.text{
+    font-size: 14px;
+}
+
+.copy{
+    font-size: 16px;
+}
+
+.text{
+    margin: 0;
+    line-height: 19px;
+}

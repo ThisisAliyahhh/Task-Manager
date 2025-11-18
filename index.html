@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="./assets/CSS/reset.css">
+    <link rel="stylesheet" href="./assets/CSS/global.css">
+</head>
+<body>
+    <main class="body__container">
+        <section class="background__container">
+            <div class="glow yellow"></div>
+            <div class="glow purple"></div>
+            <div class="glow blue"></div>
+        </section>
+
+        <section class="body__content">
+            <section class="content__card">
+                <div class="content__card__header">
+                    <div class="content__card__logo">
+                        <div class="content__card__logo__ball"></div>
+                        <div class="content__card__logo__container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-check-big h-10 w-10 text-white" aria-hidden="true">
+                                <path d="M21 10.656V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12.344"/>
+                                <path d="m9 11 3 3L22 4"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="content__card__title">
+                        <h1>Welcome Back!</h1>
+                    </div>
+                    <div class="content__card__description">
+                        Enter your details to access your account
+                    </div>
+                </div>
+
+                <div class="content__card__select">
+                    <app-button class="content__card__select__button login">
+                        <p slot="label">Login</p>
+                    </app-button>
+                    <app-button class="content__card__select__button signup">
+                        <p slot="label">Sign Up</p>
+                    </app-button>
+                </div>
+
+                <div class="content__card__userinput" data-import="">
+                    
+                </div>
+
+                <footer>
+                    <copy-right></copy-right>
+                </footer>
+            </section>
+
+
+            <aside class="content__icon">
+                
+            </aside>
+            <!-- <p>test</p> -->
+    
+    
+
+        </section>
+    </main>
+        
+
+        <script src="./components/button/button.js"></script>
+        <script src="./components/copyright/copyright.js"></script>
+</body>
+</html>

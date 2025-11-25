@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="/assets/CSS/reset.css" type="text/css" />
+<link rel="stylesheet" href="/templates/access-page/access-page.css" type="text/css" />
+
+<section class="access__container">
+  <form action="#">
+    <div class="access__content">
+      <div class="access__input__container">
+        <input-box label="Email Address" type="email" placeholder="hello@example.com" required>
+          <img slot="input-icon" src="../../assets/icons/envelope.svg" alt="">
+        </input-box>
+        <input-box label="Password" type="password" placeholder="........" required class="input-password">
+          <img slot="input-icon" src="../../assets/icons/padlock.svg" alt="">
+        </input-box>
+      </div>
+    </div>
+
+    <div class="access__button">
+      <app-button class="access__button__toggle gray__button" type="button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-circle-question-mark"
+          aria-hidden="true"
+          slot="button-icon"
+        >
+          <circle cx="12" cy="12" r="10" />
+          <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+          <path d="M12 17h.01" />
+        </svg>
+        <p slot="button-label">Help?</p>
+      </app-button>
+      <app-button class="access__button__toggle yellow__button" type="submit">
+        <p slot="button-label">Next Step</p>
+      </app-button>
+    </div>
+  </form>
+</section>
+
+<script type="module" src="../../components/button/button.js"></script>
+<script type="module" src="../../components/input-box/input-box.js"></script>

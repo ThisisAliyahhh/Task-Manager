@@ -1,7 +1,8 @@
 const copyrightTemplate = document.createElement(`template`);
 copyrightTemplate.innerHTML = `
     <style>
-        @import url("./components/copyright/copyright.css");
+        @import url(/assets/CSS/reset.css);
+        @import url("/components/copyright/copyright.css");
     </style>
 
     <div>

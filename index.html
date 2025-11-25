@@ -6,6 +6,7 @@
     <title>Task Manager</title>
     <link rel="stylesheet" href="./assets/CSS/reset.css">
     <link rel="stylesheet" href="./assets/CSS/global.css">
+
 </head>
 <body>
     <main class="body__container">
@@ -28,24 +29,24 @@
                         </div>
                     </div>
 
-                    <div class="content__card__title">
-                        <h1>Welcome Back!</h1>
-                    </div>
+                    <h1 class="content__card__title">
+                        Welcome Back!
+                    </h1>
                     <div class="content__card__description">
                         Enter your details to access your account
                     </div>
                 </div>
 
                 <div class="content__card__select">
-                    <app-button class="content__card__select__button login">
-                        <p slot="label">Login</p>
+                    <app-button class="content__card__select__button login" type="button">
+                        <p slot="button-label">Login</p>
                     </app-button>
-                    <app-button class="content__card__select__button signup">
-                        <p slot="label">Sign Up</p>
+                    <app-button class="content__card__select__button signup" type="button">
+                        <p slot="button-label">Sign Up</p>
                     </app-button>
                 </div>
 
-                <div class="content__card__userinput" data-import="">
+                <div class="content__card__userinput" data-access="./templates/access-page/access-page.html">
                     
                 </div>
 
@@ -58,7 +59,6 @@
             <aside class="content__icon">
                 
             </aside>
-            <!-- <p>test</p> -->
     
     
 
@@ -66,7 +66,9 @@
     </main>
         
 
-        <script src="./components/button/button.js"></script>
-        <script src="./components/copyright/copyright.js"></script>
+        <script type="module" src="/components/button/button.js"></script>
+        <script type="module" src="/components/input-box/input-box.js"></script>
+        <script type="module" src="/components/copyright/copyright.js"></script>
+        <script type="module" src="/assets/JS/main.js"></script>
 </body>
 </html>

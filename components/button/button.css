@@ -1,15 +1,28 @@
+:host {
+    --button-width: 100%;
+    --button-height: 100%;
+    --button-background: transparent;
+    --button-color: inherit;
+    --button-font-size: 16px;
+    --button-font-weight: 400;
+    --button-border: none;
+    --button-radius: 8px;
+    display: inline-block;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 .button{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    color: inherit;
-    border: none;
+    width: var(--button-width, 100%);
+    height: var(--button-height, 100%);
+    background: var(--button-background, transparent);
+    color: var(--button-color, inherit);
+    font-size: var(--button-font-size, 16px);
+    font-weight: var(--button-font-weight, 400);
+    border: var(--button-border, none);
+    border-radius: var(--button-radius, 8px);
+    outline: none;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-}
-
-:host([class = content__card__select__button]){
-    color: blue;
 }

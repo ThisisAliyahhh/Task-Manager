@@ -1,0 +1,31 @@
+:host {
+    --logo-width: 100%;
+    --logo-height: 100%;
+    --logo-background: #000000;
+    --logo-color: #ffffff;
+    --logo-font-size: 14px;
+    --logo-font-weight: 400;
+    --logo-border: none;
+    --logo-radius: 8px;
+    --logo-padding: 8px;
+    --logo-default-width: 32px;
+    --logo-default-height: 32px;
+    display: inline-block;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.logo__container{
+    width: var(--logo-default-width,32px);
+    height: var(--logo-default-height,32px);
+    background: var(--logo-background, #000000);
+    padding: var(--logo-padding, 8px);
+    border-radius: var(--logo-radius, 8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo__icon{
+    --logo-color: #ffffff;
+}
+

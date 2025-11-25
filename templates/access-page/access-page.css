@@ -1,0 +1,49 @@
+.access__container{
+    max-width: 100%;
+}
+
+input-box{
+    width: var(--input-width);
+}
+
+.access__button{
+    width: 100%;
+    height: 57px;
+    border-radius: 12px;
+    display: flex;
+    padding: 5px 7px 2px;
+    justify-content: space-between;
+    gap: 5px;
+    margin: 20px 0;
+}
+
+
+app-button{
+    width: 48%;
+    --button-radius: 12px;
+}
+
+app-button.gray__button{
+    --button-background: #f8f9fa;
+    --button-border: 2px solid #e5e7eb;
+    --button-color: #1e293b;
+    --button-font-weight: 500;
+}
+
+app-button.gray__button:hover{
+    --button-color: #ffffff;
+}
+
+app-button.yellow__button{
+    --button-color: #030062;
+    --button-background: linear-gradient(to bottom right, #fcc800, #efb100);
+    --button-border: 2px solid #fcc800;
+    --button-font-size: 16px;
+    --button-font-weight: 600;
+    --box-shadow-color: color-mix(in oklab, #efb100 30%, transparent);
+    box-shadow: 0px 10px 15px -3px var(--box-shadow-color), 0 4px 6px -4px var(--box-shadow-color);
+}
+
+app-button.yellow__button:hover{
+    --button-background: linear-gradient(to right, #efb100, #d08700);
+}

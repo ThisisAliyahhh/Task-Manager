@@ -1,0 +1,127 @@
+.dashboard__container{
+    width: 100%;
+    height: 100vh;
+}
+
+.sliding__sidebar{
+    border-right: 1px solid #e2e8f0;
+    width: 260px;
+    height: 100%;
+    position: fixed;
+}
+
+.sidebar__heading{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 12px;
+}
+
+.sidebar__logo{
+    width: 70%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+logo-template.default__logo{
+    --logo-background: linear-gradient(to bottom right, #155dfc, #4f39f6);
+    --logo-default-width: 40px;
+    --logo-default-height: 40px;
+}
+
+.sidebar__logo__name{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+logo-template.sidebar__toogle{
+    --logo-background: none;
+}
+
+logo-template.sidebar__toogle:hover{
+    --logo-background: #06b6d4;
+}
+
+logo-template.sidebar__toogle:hover [slot="logo__icon"] {
+    stroke: #ffffff;
+}
+
+
+.sidebar__user__profile{
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+}
+
+logo-template.user_picture{
+    --logo-radius: 50%;
+    --logo-background: linear-gradient(to bottom right, #155dfc, #4f39f6);
+    --logo-default-width: 40px;
+    --logo-default-height: 40px;
+}
+
+logo-template.user_picture [slot="logo__icon"] {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.user__fullName{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.user__email{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.sidebar__items{
+    /* border: 1px solid purple; */
+    height: 60%;
+}
+
+.sidebar__items ul{
+    height: 100%;
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar__items li{
+    width: 100%;
+    border: 1px solid purple;
+    border-radius: 8px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: #364153;
+    padding: 4px 8px;
+}
+
+.sidebar__items li:hover{
+    background-color: #f1f5f9;
+    color: #ffffff;
+}
+
+li.dashboard__button:active{
+    background: #3b82f6;
+}
+
+.sidebar__logout{
+    width: 100%;
+    height: 10%;
+    border-top: 1px solid #e2e8f0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

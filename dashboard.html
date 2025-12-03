@@ -38,37 +38,37 @@
             <div class="sidebar__items">
                 <ul>
                     <li class="dashboard__button">
-                        <app-button class="dashboard__button">
+                        <app-button class="dashboard__button sidebar__button">
                             <svg slot="button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout-dashboard h-5 w-5 flex-shrink-0" aria-hidden="true"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>
                             <p slot="button-label">Dashboard</p>
                         </app-button>
                     </li>
                     <li>
-                        <app-button class="tasks__button">
+                        <app-button class="tasks__button sidebar__button">
                             <svg slot="button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-check-big h-10 w-10 text-white" aria-hidden="true"><path d="M21 10.656V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12.344"/><path d="m9 11 3 3L22 4"/></svg>
                             <p slot="button-label">Tasks</p>
                         </app-button>
                     </li>
                     <li>
-                        <app-button class="community__button">
+                        <app-button class="community__button sidebar__button">
                             <svg slot="button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users h-5 w-5 flex-shrink-0" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
                             <p slot="button-label">Community</p>
                         </app-button>
                     </li>
                     <li>
-                        <app-button class="expenses__button">
+                        <app-button class="expenses__button sidebar__button">
                             <svg slot="button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign h-5 w-5 flex-shrink-0" aria-hidden="true"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                             <p slot="button-label">Expenses</p>
                         </app-button>
                     </li>
                     <li>
-                        <app-button class="notes__button">
+                        <app-button class="notes__button sidebar__button">
                             <svg slot="button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text h-5 w-5 flex-shrink-0" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
                             <p slot="button-label">Notes</p>
                         </app-button>
                     </li>
                     <li>
-                        <app-button class="settings__button">
+                        <app-button class="settings__button sidebar__button">
                             <svg slot="button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings h-5 w-5 flex-shrink-0" aria-hidden="true"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"/><circle cx="12" cy="12" r="3"/></svg>
                             <p slot="button-label">Settings</p>
                         </app-button>
@@ -85,10 +85,10 @@
 
 
         <main class="dashboard__page">
-
+            <p>Dashboard</p>
         </main>
-        <!-- <logo-template></logo-template>
-        <summary-box>
+        <!-- <logo-template></logo-template> -->
+        <!-- <summary-box>
             <p slot="summary__heading">Active Tasks</p>
             <logo-template slot="summary__logo" class="check__box">
                 <svg slot="logo__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-check-big h-10 w-10 text-white" aria-hidden="true"><path d="M21 10.656V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12.344"/><path d="m9 11 3 3L22 4"/></svg>
@@ -101,5 +101,6 @@
     <script type="module" src="/components/logo/logo.js"></script>
     <script type="module" src="/components/summary-box/summary-box.js"></script>
     <script type="module" src="/components/button/button.js"></script>
+    <script type="module" src="/assets/JS/main.js"></script>
 </body>
 </html>

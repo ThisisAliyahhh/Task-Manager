@@ -7,6 +7,8 @@
     --button-font-weight: 400;
     --button-border: none;
     --button-radius: 8px;
+    --button-justify: center;
+    --button-padding: 0px;
     display: inline-block;
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -22,7 +24,8 @@
     border-radius: var(--button-radius, 8px);
     outline: none;
     display: flex;
-    justify-content: center;
+    justify-content: var(--button-justify, center);
     align-items: center;
     gap: 10px;
+    padding: var(--button-padding, 0px);
 }

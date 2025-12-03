@@ -16,8 +16,6 @@ function loginAndSignupToggle(){
         accessDescription.textContent = `Enter your details to access your account`;
         loginButton.style.backgroundColor = `#ffffff`;
         signupButton.style.backgroundColor = `transparent`;
-        console.log(`Login clicked`);
-        console.log(accessButton.textContent);
 
         // removes FullName input field
         const fullNameInput = document.querySelector(`.fullname`);
@@ -25,7 +23,6 @@ function loginAndSignupToggle(){
 
         const passwordMessage = document.querySelector(`input-box[label="Password"]`).querySelector(`[slot="message"]`);
         passwordMessage.remove();
-        console.log(passwordMessage)
     })
 
     signupButton.addEventListener(`click`, (event) => {
@@ -48,30 +45,26 @@ function loginAndSignupToggle(){
         accessInputContainer.append(inputBox);
 
         accessPage.prepend(accessInputContainer);
-        console.log(accessPage);
         // End
 
         // adds password message
         const passwordMessage = document.createElement(`p`);
         passwordMessage.setAttribute(`slot`, `message`);
         passwordMessage.textContent = `Password must be at least 6 characters long`;
-        console.log(passwordMessage)
         const passwordInputBox = document.querySelector(`input-box[label="Password"]`)
         passwordInputBox.append(passwordMessage);
-        console.log(passwordInputBox);
 
+        //changes some contents
         accessHeader.textContent = `Join TaskMaster`;
         accessDescription.textContent = `Create an account to boost your productivity`;
         signupButton.style.backgroundColor = `#ffffff`;
         loginButton.style.backgroundColor = `transparent`;
         const accessButton = document.querySelector(`.yellow__button`).querySelector(`[slot="button-label"]`);
         accessButton.textContent = `Create Account`;
-        console.log(`signup clicked`);
     })
 }
 
 const accessFile = accessPageFile.getAttribute(`data-access`);
-console.log(accessFile);
 fetch(accessFile)
     .then((response) => {
         return response.text()
@@ -84,5 +77,4 @@ fetch(accessFile)
     })
 
 
-// renderFile(templatesElements);
 loginAndSignupToggle();

@@ -2,7 +2,7 @@
 *, *::before, *::after {
   box-sizing: border-box;
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  transition: all .5s;
+  transition: all .15s;
 }
 
 /* 2. Remove default margin */

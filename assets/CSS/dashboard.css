@@ -1,11 +1,12 @@
 .dashboard__container{
     width: 100%;
     height: 100vh;
+    display: flex;
 }
 
 .sliding__sidebar{
     border-right: 1px solid #e2e8f0;
-    width: 260px;
+    width: 20%;
     height: 100%;
     position: fixed;
 }
@@ -15,7 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 12px;
+    padding: 5px 16px;
 }
 
 .sidebar__logo{
@@ -55,7 +56,7 @@ logo-template.sidebar__toogle:hover [slot="logo__icon"] {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 12px;
+    padding: 16px;
 }
 
 logo-template.user_picture{
@@ -85,12 +86,18 @@ logo-template.user_picture [slot="logo__icon"] {
     height: 60%;
 }
 
+app-button.sidebar__button{
+    /* --button-border: 1px solid red; */
+    --button-font-size: 14px;
+    --button-justify: start;
+    width: 100%;
+}
+
 .sidebar__items ul{
     height: 100%;
     /* border: 1px solid red; */
     margin: 0;
-    padding: 0;
-    padding: 12px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -105,7 +112,8 @@ logo-template.user_picture [slot="logo__icon"] {
     align-items: center;
     justify-content: start;
     color: #364153;
-    padding: 4px 8px;
+    padding: 8px;
+    font-size: 14px;
 }
 
 .sidebar__items li:hover{
@@ -124,4 +132,23 @@ li.dashboard__button:active{
     position: absolute;
     bottom: 0;
     left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 16px;
+}
+
+app-button.logout__button{
+    width: 100%;
+    --button-justify: start;
+    --button-font-size: 14px;
+    --button-color: #e7000b;
+    /* --button-border: 1px solid #e7000b; */
+    --button-padding: 8px 12px;
+}
+
+.dashboard__page{
+    border: 1px solid red;
+    margin-left: 20%;
+    width: 80%;
 }

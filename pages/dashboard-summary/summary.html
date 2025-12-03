@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summary Page</title>
+    <link rel="stylesheet" href="/assets/CSS/reset.css" />
+    <link rel="stylesheet" href="/pages/dashboard-summary/summary.css" />
+  </head>
+  <body>
+    <section class="summary-page">
+      <div class="summary-heading">
+        <h1 class="user-greeting">
+          <span class="greeting">Good Morning</span>,
+          <span class="user-name">John Doe</span>!
+        </h1>
+        <p class="heading-message">
+          Here's what's happening with your productivity today
+        </p>
+      </div>
+
+      <section class="summary-overview">
+        <summary-box class="overview">
+          <p slot="summary__heading">Active Tasks</p>
+          <logo-template slot="summary__logo" class="active-tasks">
+            <svg slot="logo__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-square-check-big h-10 w-10 text-white"
+            aria-hidden="true"
+            >
+            <path
+                d="M21 10.656V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12.344"
+            />
+            <path d="m9 11 3 3L22 4" />
+            </svg>
+          </logo-template>
+
+          <p slot="summary__data">0</p>
+          <p slot="summary__title">0 completed</p>
+        </summary-box>
+
+        <summary-box class="overview">
+          <p slot="summary__heading">Total Expenses</p>
+          <logo-template slot="summary__logo" class="total-expenses">
+            <svg slot="logo__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign h-5 w-5 flex-shrink-0" aria-hidden="true"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </logo-template>
+
+          <p slot="summary__data">&#36;0.00</p>
+          <p slot="summary__title">This period</p>
+        </summary-box>
+
+        <summary-box class="overview">
+          <p slot="summary__heading">Total Notes</p>
+          <logo-template slot="summary__logo" class="total-notes">
+            <svg slot="logo__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text h-5 w-5 flex-shrink-0" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+          </logo-template>
+
+          <p slot="summary__data">0</p>
+          <p slot="summary__title">Saved notes</p>
+        </summary-box>
+
+        <summary-box class="overview">
+          <p slot="summary__heading">Completion Rate</p>
+          <logo-template slot="summary__logo" class="completion-rate">
+            <svg slot="logo__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up h-5 w-5 text-indigo-600" aria-hidden="true"><path d="M16 7h6v6"/><path d="m22 7-8.5 8.5-5-5L2 17"/></svg>
+          </logo-template>
+
+          <p slot="summary__data">0%</p>
+          <p slot="summary__title">Task completion </p>
+        </summary-box>
+      </section>
+
+      <section class="summary-tab">
+        <div class="recent-task tab">
+          <div class="summary-tab__heading">
+            <svg
+              class="summary-tab__heading__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-clock h-5 w-5 text-blue-600"
+              aria-hidden="true"
+            >
+              <path d="M12 6v6l4 2" />
+              <circle cx="12" cy="12" r="10" />
+            </svg>
+            <p class="summary-tab__heading__name">Recent Task</p>
+          </div>
+          <div class="summary-tab__body recent-task-body"></div>
+        </div>
+
+        <div class="quick-actions tab">
+          <div class="summary-tab__heading">
+            <svg
+              class="summary-tab__heading__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-trending-up h-5 w-5 text-indigo-600"
+              aria-hidden="true"
+            >
+              <path d="M16 7h6v6" />
+              <path d="m22 7-8.5 8.5-5-5L2 17" />
+            </svg>
+            <p class="summary-tab__heading__name">Quick Actions</p>
+          </div>
+          <div class="summary-tab__body quick-actions-body">
+            <app-button class="summary-tab__body__option">
+              <logo-template slot="button-icon" class="summary-button-icon new-task">
+                <svg slot="logo__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-check-big h-10 w-10 text-white" aria-hidden="true"><path d="M21 10.656V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12.344"/><path d="m9 11 3 3L22 4"/></svg>
+              </logo-template>
+              <span slot="button-label" class="summary-button-label">
+                <p class="quick-task-name">Create New Task</p>
+                <p class="quick-task-description">Add a task to your list</p>
+              </span>
+            </app-button>
+            <app-button class="summary-tab__body__option">
+              <logo-template
+                slot="button-icon"
+                class="summary-button-icon track-expenses"
+              >
+            <svg slot="logo__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign h-5 w-5 flex-shrink-0" aria-hidden="true"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></logo-template>
+              <span slot="button-label" class="summary-button-label">
+                <p class="quick-task-name">Track Expenses</p>
+                <p class="quick-task-description">Record a new expense</p>
+              </span>
+            </app-button>
+            <app-button class="summary-tab__body__option">
+              <logo-template
+                slot="button-icon"
+                class="summary-button-icon write-notes"
+              >
+              <svg slot="logo__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text h-5 w-5 flex-shrink-0" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+                </logo-template>
+              <span slot="button-label" class="summary-button-label">
+                <p class="quick-task-name">Write Notes</p>
+                <p class="quick-task-description">Capture your thoughts</p>
+              </span>
+            </app-button>
+          </div>
+        </div>
+      </section>
+    </section>
+    <script type="module" src="/components/button/button.js"></script>
+    <script type="module" src="/components/logo/logo.js"></script>
+    <script type="module" src="/components/summary-box/summary-box.js"></script>
+  </body>
+</html>

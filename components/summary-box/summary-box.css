@@ -20,6 +20,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background: var(--summary-background, transparent);
 }
 
 .summary__container:hover{
@@ -34,18 +35,20 @@
     align-items: center;
 }
 
-::slotted([slot="summary__heading"]){
+.summary__heading {
     font-size: 14px;
     color: #4a5565;
 }
 
-::slotted([slot="summary__data"]){
+.summary__data {
+    display: block;
     font-size: 24px;
     font-weight: 700;
     color: #1e2936;
 }
 
-::slotted([slot="summary__title"]){
+.summary__title {
+    display: block;
     font-size: 12px;
     color: #4a5565;
 }

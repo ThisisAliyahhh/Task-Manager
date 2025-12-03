@@ -8,12 +8,12 @@ summaryBoxTemplate.innerHTML = `
 
     <div class="summary__container">
         <div class="summary__header">
-            <slot name="summary__heading">Active Task</slot>
-            <slot name="summary__logo"><logo-template></logo-template></slot>
+            <slot name="summary__heading" class="summary__heading">Active Tasks</slot>
+            <slot name="summary__logo"></slot>
         </div>
         <div class="summary__info">
-            <slot name="summary__data">0</slot>
-            <slot name="summary__title">0 completed</slot>
+            <slot name="summary__data" class="summary__data">0</slot>
+            <slot name="summary__title" class="summary__title">0 completed</slot>
         </div>
     </div>
 `

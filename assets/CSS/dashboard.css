@@ -6,7 +6,7 @@
 
 .sliding__sidebar{
     border-right: 1px solid #e2e8f0;
-    width: 20%;
+    width: 19%;
     height: 100%;
     position: fixed;
 }
@@ -148,7 +148,8 @@ app-button.logout__button{
 }
 
 .dashboard__page{
-    border: 1px solid red;
-    margin-left: 20%;
-    width: 80%;
+    border: 1px solid purple;
+    margin-left: 19%;
+    width: 81%;
+    padding: 32px;
 }

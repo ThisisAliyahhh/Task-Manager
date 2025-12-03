@@ -1,0 +1,147 @@
+body{
+    width: 100%;
+}
+
+.summary-page{
+    width: 79%;
+    margin-left: 19%;
+    padding: 32px;
+    background: #F9FAFB;
+}
+
+.summary-heading{
+    margin-bottom: 32px;
+}
+
+.user-greeting{
+    font-size: 30px;
+    color: #101828;
+}
+
+.heading-message{
+    font-size: 16px;
+    color: #6a7282;
+}
+
+.summary-overview{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.overview{
+    --summary-background: #ffffff;
+}
+
+.active-tasks{
+    --logo-background: #155dfc;
+}
+
+.total-expenses{
+    --logo-background: #0092b8;
+}
+
+.total-notes{
+    --logo-background: #00a63e;
+}
+
+.completion-rate{
+    --logo-background: #4f39f6;
+}
+
+.summary-tab{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.summary-tab .tab{
+    border: 1px solid #e2e8f0;
+    background: #ffffff;
+    width: 50%;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.summary-tab__heading{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.summary-tab__heading__icon{
+    color: #4f39f6;
+    width: 20px;
+}
+
+.summary-tab__body{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    /* gap: 12px; */
+}
+
+.summary-tab__body__option{
+    background: #F9FAFB;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 12px;
+    /* --button-color: red; */
+    --button-justify: start;
+    /* display: flex; */
+}
+
+.summary-tab__body__option:last-child{
+    margin-bottom: 0;
+}
+
+.summary-tab__body__option:hover{
+    background: #06B6D4;
+}
+
+.summary-button-icon{
+    --logo-default-width: 40px;
+    --logo-default-height: 40px;
+}
+
+.new-task {
+    --logo-background: #dbeafe;
+    --logo-color: #155dfc;
+}
+
+.track-expenses {
+    --logo-background: #cefafe;
+    --logo-color: #0092b8;
+}
+
+.write-notes {
+    --logo-background: #dcfce7;
+    --logo-color: #00a63e;
+}
+
+.summary-button-label{
+    /* border: 5px solid red; */
+    text-align: left;
+}
+
+.quick-task-name{
+    color: #1e293b;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.summary-tab__body__option:hover .quick-task-name{
+    color: #ffffff;
+}
+
+.quick-task-description{
+    color: #6a7282;
+    font-size: 12px;
+    font-weight: 500;
+}

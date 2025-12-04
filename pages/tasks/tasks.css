@@ -1,0 +1,222 @@
+body{
+    width: 100%;
+    padding: 32px;
+}
+
+.task-page{
+    width: 79%;
+    margin-left: 19%;
+    background: #F9FAFB;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    /* box-shadow: 0 1px 3px 0 transparent; */
+}
+
+.task-page__heading{
+    /* background: pink; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 24px;
+}
+
+.task__heading__title{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.task___heading__description{
+    font-size: 14px;
+}
+
+.task-page__heading__icon{
+    --logo-background: #155dfc;
+    --logo-default-width: 40px;
+    --logo-default-height: 40px;
+}
+
+.task-page__body{
+    background-color: #ffffff;
+    padding: 24px;
+}
+
+.task__toggle, .task__ai__summary__toggle{
+    width: 26%;
+    height: 40px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: #f3f4f6;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.task__toggle app-button, .task__ai__summary__toggle app-button{
+    width: 45%;
+    height: 100%;
+    /* --button-border: 1px solid red; */
+    --button-radius: 6px;
+    --button-padding: 6px 10px;
+}
+.task__toggle app-button.my__tasks__ai__btn, .task__ai__summary__toggle app-button.latest__summary__btn{
+    width: 55%;
+    height: 100%;
+}
+
+.task__toggle app-button [slot=button-icon], .task__ai__summary__toggle app-button [slot=button-icon] {
+    stroke: #1e293b;
+}
+
+.task__toggle app-button [slot=button-label], .task__ai__summary__toggle app-button [slot=button-label] {
+    color: #1e293b;
+    font-size: 14px;
+}
+
+.task__toggle app-button.active, .task__ai__summary__toggle app-button.active{
+    --button-background: #ffffff;
+}
+
+/* .task-details{
+    border: 1px solid red;
+}
+
+.my__tasks__container{
+    border: 1px solid purple;
+} */
+
+.my__tasks__heading, .task__ai__summary__heading{
+    /* border: 1px solid palegreen; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.my__tasks__summary{
+    width: 20%;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.active__tasks, .completed__tasks{
+    text-align: center;
+}
+.active__tasks__number, .completed__tasks__number{
+    /* border: 1px solid blue; */
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.completed__tasks__number{
+    color: #00a63e;
+}
+
+.my__tasks__text{
+    color: #6a7282;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.my__task__straight-line{
+    width: 1px;
+    background: #e5e7eb;
+    height: 32px;
+}
+
+app-button.add-task, app-button.generate-new{
+    background: #155dfc;
+    border-radius: 8px;
+    color: #ffffff;
+    height: 36px;
+    padding: 8px;
+    --button-font-size: 14px;
+}
+
+.my__tasks__box{
+    border: 2px dashed #c6d2ff;
+    border-radius: 12px;
+    /* height: 160px; */
+    background: linear-gradient(to right bottom, #f8fafc, #eef2ff);
+}
+
+.my__tasks__box__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 32px;
+}
+
+.my__tasks__box__content svg{
+    width: 48px;
+    height: 48px;
+    stroke: #a3b3ff;
+    margin-bottom: 12px;
+}
+
+.my__tasks__box__content p{
+    color: #64748b;
+    font-size: 16px;
+}
+
+.my__tasks__box__content .small__text{
+    font-size: 14px;
+}
+
+app-button.deactive{
+    opacity: 0.5;
+}
+
+.task__ai__powered__summary{
+    width: 40%;
+    display: block;
+}
+
+.task__ai__powered__summary h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.task__ai__powered__summary p{
+    color: #6a7282;
+    font-size: 14px;
+}
+
+.task__ai__summary__toggle{
+    width: 28%;
+}
+
+.task__ai__summary__box{
+    border: 1px dashed #e2e8f0;
+    border-radius: 12px;
+    /* height: 160px; */
+    background: #F9FAFB;
+}
+
+.task__ai__summary__box__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 32px;
+}
+
+.task__ai__summary__box__content svg{
+    width: 64px;
+    height: 64px;
+    stroke: #99a1af;
+    margin-bottom: 12px;
+}
+
+.task__ai__summary__box__content p{
+    color: #6a7282;
+    font-size: 18px;
+}
+
+.task__ai__summary__box__content .small__text{
+    font-size: 14px;
+}

@@ -1,39 +1,19 @@
-<link rel="stylesheet" href="/assets/CSS/reset.css" />
-<link rel="stylesheet" href="/pages/tasks/tasks.css" />
-<section class="task-page">
-  <div class="task-page__heading">
-    <logo-template class="task-page__heading__icon">
-      <svg
-        slot="logo__icon"
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="lucide lucide-square-check-big h-10 w-10 text-white"
-        aria-hidden="true"
-      >
-        <path
-          d="M21 10.656V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12.344"
-        />
-        <path d="m9 11 3 3L22 4" />
-      </svg>
-    </logo-template>
-    <div class="task__heading">
-      <h2 class="task__heading__title">Task Management</h2>
-      <p class="task___heading__description">Manage and track your tasks</p>
-    </div>
-  </div>
-
-  <div class="task-page__body">
-    <div class="task__toggle">
-      <app-button class="my__tasks__btn active">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/assets/CSS/reset.css" />
+  <link rel="stylesheet" href="/pages/tasks/tasks.css" />
+</head>
+<body>
+  
+  <section class="task-page">
+    <div class="task-page__heading">
+      <logo-template class="task-page__heading__icon">
         <svg
-          slot="button-icon"
+          slot="logo__icon"
           xmlns="http://www.w3.org/2000/svg"
           width="16"
           height="16"
@@ -43,161 +23,194 @@
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="lucide lucide-circle-check h-4 w-4"
+          class="lucide lucide-square-check-big h-10 w-10 text-white"
           aria-hidden="true"
         >
-          <circle cx="12" cy="12" r="10" />
-          <path d="m9 12 2 2 4-4" />
+          <path
+            d="M21 10.656V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12.344"
+          />
+          <path d="m9 11 3 3L22 4" />
         </svg>
-        <p slot="button-label">My Tasks</p>
-      </app-button>
-
-      <app-button class="my__tasks__ai__btn">
-        <svg
-          slot="button-icon"
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-chart-column h-4 w-4"
-          aria-hidden="true"
-        >
-          <path d="M3 3v16a2 2 0 0 0 2 2h16" />
-          <path d="M18 17V9" />
-          <path d="M13 17V5" />
-          <path d="M8 17v-3" />
-        </svg>
-        <p slot="button-label">AI summary</p>
-      </app-button>
-    </div>
-
-    <div class="task-details">
-      <div class="my__tasks__container">
-        <div class="my__tasks__heading">
-          <div class="my__tasks__summary">
-            <div class="active__tasks">
-              <p class="active__tasks__number">0</p>
-              <p class="my__tasks__text">Active Tasks</p>
-            </div>
-
-            <div class="my__task__straight-line"></div>
-
-            <div class="completed__tasks">
-              <p class="completed__tasks__number">0</p>
-              <p class="my__tasks__text">Completed</p>
-            </div>
-          </div>
-
-          <app-button class="add-task">
-            <svg slot="button-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus h-4 w-4" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
-            <p slot="button-label">Add Task</p>
-          </app-button>
-        </div>
-
-        <div class="my__tasks__box">
-          <div class="my__tasks__box__content">
-            <svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="12" cy="12" r="10"></circle>
-            </svg>
-            <p>No Task yet</p>
-            <p class="small__text">Click "Add Task" to create your first task</p>
-          </div>
-        </div>
+      </logo-template>
+      <div class="task__heading">
+        <h2 class="task__heading__title">Task Management</h2>
+        <p class="task___heading__description">Manage and track your tasks</p>
       </div>
     </div>
-
-
-    <template class="my__tasks">
-      <div class="my__tasks__container">
-        <div class="my__tasks__heading">
-          <div class="my__tasks__summary">
-            <div class="active__tasks">
-              <p class="active__tasks__number">0</p>
-              <p class="my__tasks__text">Active Tasks</p>
+  
+    <div class="task-page__body">
+      <div class="task__toggle">
+        <app-button class="my__tasks__btn active">
+          <svg
+            slot="button-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-circle-check h-4 w-4"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <path d="m9 12 2 2 4-4" />
+          </svg>
+          <p slot="button-label">My Tasks</p>
+        </app-button>
+  
+        <app-button class="my__tasks__ai__btn">
+          <svg
+            slot="button-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-chart-column h-4 w-4"
+            aria-hidden="true"
+          >
+            <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+            <path d="M18 17V9" />
+            <path d="M13 17V5" />
+            <path d="M8 17v-3" />
+          </svg>
+          <p slot="button-label">AI summary</p>
+        </app-button>
+      </div>
+  
+      <div class="task-details">
+        <div class="my__tasks__container">
+          <div class="my__tasks__heading">
+            <div class="my__tasks__summary">
+              <div class="active__tasks">
+                <p class="active__tasks__number">0</p>
+                <p class="my__tasks__text">Active Tasks</p>
+              </div>
+  
+              <div class="my__task__straight-line"></div>
+  
+              <div class="completed__tasks">
+                <p class="completed__tasks__number">0</p>
+                <p class="my__tasks__text">Completed</p>
+              </div>
             </div>
-
-            <div class="my__task__straight-line"></div>
-
-            <div class="completed__tasks">
-              <p class="completed__tasks__number">0</p>
-              <p class="my__tasks__text">Completed</p>
-            </div>
+  
+            <app-button class="add-task">
+              <svg slot="button-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus h-4 w-4" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+              <p slot="button-label">Add Task</p>
+            </app-button>
           </div>
-
-          <app-button class="add-task">
-            <svg slot="button-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus h-4 w-4" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
-            <p slot="button-label">Add Task</p>
-          </app-button>
-        </div>
-
-        <div class="my__tasks__box">
-          <div class="my__tasks__box__content">
-            <svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="12" cy="12" r="10"></circle>
-            </svg>
-            <p>No Task yet</p>
-            <p class="small__text">Click "Add Task" to create your first task</p>
+  
+          <div class="my__tasks__box">
+            <div class="my__tasks__box__content">
+              <svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+              </svg>
+              <p>No Task yet</p>
+              <p class="small__text">Click "Add Task" to create your first task</p>
+            </div>
           </div>
         </div>
       </div>
-    </template>
-
-    <template class="task__ai__summary">
-      <div class="task__ai__summary__container">
-        <div class="task__ai__summary__heading">
-          <div class="task__ai__powered__summary">
-            <h3>AI-Powered Task Summary</h3>
-            <p>Get insights and recommendations for your tasks</p>
+  
+  
+      <template class="my__tasks">
+        <div class="my__tasks__container">
+          <div class="my__tasks__heading">
+            <div class="my__tasks__summary">
+              <div class="active__tasks">
+                <p class="active__tasks__number">0</p>
+                <p class="my__tasks__text">Active Tasks</p>
+              </div>
+  
+              <div class="my__task__straight-line"></div>
+  
+              <div class="completed__tasks">
+                <p class="completed__tasks__number">0</p>
+                <p class="my__tasks__text">Completed</p>
+              </div>
+            </div>
+  
+            <app-button class="add-task">
+              <svg slot="button-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus h-4 w-4" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+              <p slot="button-label">Add Task</p>
+            </app-button>
           </div>
-
-          <app-button class="generate-new deactive">
-            <svg slot="button-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-4 w-4" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/><path d="M20 2v4"/><path d="M22 4h-4"/><circle cx="4" cy="20" r="2"/></svg>>
-            <p slot="button-label">Generate New</p>
-          </app-button>
-        </div>
-
-        <div class="task__ai__summary__toggle">
-          <app-button class="latest__summary__btn active">
-            <svg slot="button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-4 w-4" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/><path d="M20 2v4"/><path d="M22 4h-4"/><circle cx="4" cy="20" r="2"/></svg>>
-            <p slot="button-label">Latest Summary</p>
-          </app-button>
-
-          <app-button class="my__tasks__ai__history__btn">
-            <svg slot="button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-5 w-5 text-blue-600" aria-hidden="true"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="10"/></svg>
-            <p slot="button-label">History <span class="my__tasks__ai__history__number">(0)</span></p>
-          </app-button>
-        </div>
-
-        <div class="task__ai__summary__box">
-          <div class="task__ai__summary__box__content">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column h-4 w-4" aria-hidden="true"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
-            <p>No summary generated yet</p>
-            <p class="small__text">Click "Generate New" to get AI-powered insights</p>
+  
+          <div class="my__tasks__box">
+            <div class="my__tasks__box__content">
+              <svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+              </svg>
+              <p>No Task yet</p>
+              <p class="small__text">Click "Add Task" to create your first task</p>
+            </div>
           </div>
         </div>
-      </div>
-    </template>
+      </template>
+  
+      <template class="task__ai__summary">
+        <div class="task__ai__summary__container">
+          <div class="task__ai__summary__heading">
+            <div class="task__ai__powered__summary">
+              <h3>AI-Powered Task Summary</h3>
+              <p>Get insights and recommendations for your tasks</p>
+            </div>
+  
+            <app-button class="generate-new deactive">
+              <svg slot="button-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-4 w-4" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/><path d="M20 2v4"/><path d="M22 4h-4"/><circle cx="4" cy="20" r="2"/></svg>>
+              <p slot="button-label">Generate New</p>
+            </app-button>
+          </div>
+  
+          <div class="task__ai__summary__toggle">
+            <app-button class="latest__summary__btn active">
+              <svg slot="button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-4 w-4" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/><path d="M20 2v4"/><path d="M22 4h-4"/><circle cx="4" cy="20" r="2"/></svg>>
+              <p slot="button-label">Latest Summary</p>
+            </app-button>
+  
+            <app-button class="my__tasks__ai__history__btn">
+              <svg slot="button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-5 w-5 text-blue-600" aria-hidden="true"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="10"/></svg>
+              <p slot="button-label">History <span class="my__tasks__ai__history__number">(0)</span></p>
+            </app-button>
+          </div>
+  
+          <div class="task__ai__summary__box">
+            <div class="task__ai__summary__box__content">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column h-4 w-4" aria-hidden="true"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+              <p>No summary generated yet</p>
+              <p class="small__text">Click "Generate New" to get AI-powered insights</p>
+            </div>
+          </div>
+        </div>
+      </template>
+  
+      <template class="latest__summary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column h-4 w-4" aria-hidden="true"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+        <p>No summary generated yet</p>
+        <p class="small__text">Click "Generate New" to get AI-powered insights</p>
+      </template>
+  
+  
+      <template class="my__tasks__ai__history">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-5 w-5 text-blue-600" aria-hidden="true"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="10"/></svg>
+        <p>No summary history</p>
+        <p class="small__text">Generate summaries to build up your history</p>
+      </template>
+    </div>
+  </section>
+  
+  <script type="module" src="/components/button/button.js"></script>
+  <script type="module" src="/components/logo/logo.js"></script>
+  <script type="module" src="/pages/tasks/tasks.js"></script>
+</body>
+</html>
 
-    <template class="latest__summary">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column h-4 w-4" aria-hidden="true"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
-      <p>No summary generated yet</p>
-      <p class="small__text">Click "Generate New" to get AI-powered insights</p>
-    </template>
 
-
-    <template class="my__tasks__ai__history">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-5 w-5 text-blue-600" aria-hidden="true"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="10"/></svg>
-      <p>No summary history</p>
-      <p class="small__text">Generate summaries to build up your history</p>
-    </template>
-  </div>
-</section>
-
-<script type="module" src="/components/button/button.js"></script>
-<script type="module" src="/components/logo/logo.js"></script>
-<script type="module" src="/pages/tasks/tasks.js"></script>

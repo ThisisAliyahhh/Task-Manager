@@ -1,5 +1,6 @@
 import "/components/button/button.js"
 import "/components/logo/logo.js"
+import "/components/summary-box/summary-box.js"
 
 const pages = document.querySelectorAll(`.sidebar__button`);
 const pageFile = document.querySelector(`.dashboard__page`); 
@@ -34,12 +35,3 @@ pages.forEach((page) => {
             })
 
 });
-
-
-// console.log(pageFile.get(`.sidebar__button`));
-
-// const accessFile = accessPageFile.getAttribute(`data-access`);
-
-
-
-// console.log(page)

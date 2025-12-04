@@ -1,0 +1,126 @@
+.community-page{
+    width: 100%;
+    background: #F9FAFB;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    /* box-shadow: 0 1px 3px 0 transparent; */
+}
+
+.community-page__heading{
+    /* background: pink; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 24px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.community__heading__title{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.community___heading__description{
+    color: #6a7282;
+    font-size: 14px;
+}
+
+.community-page__heading__icon{
+    --logo-background: #4f39f6;
+    --logo-default-width: 40px;
+    --logo-default-height: 40px;
+}
+
+.community-page__body{
+    background-color: #ffffff;
+    padding: 24px;
+}
+
+.community__posts__box{
+    border: 1px solid #e2e8f0;
+    padding: 16px;
+    margin: 24px 0;
+    border-radius: 12px;
+}
+
+.community__user__post-info{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 7px;
+}
+
+.community__user__post-info__logo{
+    width: 5%;
+    --logo-radius: 50%;
+    --logo-background: #2b7fff;
+    --logo-default-width: 40px;
+    --logo-default-height: 40px;
+}
+
+.community__user__post-info__textarea{
+    width: 95%;
+    height: 64px;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #1e293b;
+    border: none;
+    resize: none;
+}
+
+.community__user__post-info__textarea::placeholder {
+    color: #6a7282;
+}
+
+.community__user__post-info__textarea:focus{
+    outline: 3px solid rgba(59, 130, 246, 0.5);
+    border: 1px solid #3b82f6;
+}
+
+.community__posts__box__button__container{
+    text-align: right;
+}
+
+.community__posts__box__button{
+    width: 72px;
+    height: 32px;
+    --button-color: #ffffff;
+    --button-background: #3b82f6;
+    --button-radius: 6px;
+    --button-font-size: 14px;
+}
+
+.community__user__post-info{
+    display: flex;
+    gap: 12px;
+}
+
+.community__posts{
+    border: 1px dashed #e2e8f0;
+    border-radius: 12px;
+    background: #F9FAFB;
+}
+
+.community__posts__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 32px;
+}
+
+.community__posts__content svg{
+    width: 48px;
+    height: 48px;
+    stroke: #99a1af;
+    margin-bottom: 12px;
+}
+
+.community__posts__content p{
+    color: #6a7282;
+    font-size: 16px;
+}
+
+app-button.deactive{
+    opacity: 0.5;
+}

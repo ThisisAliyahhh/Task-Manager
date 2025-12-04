@@ -1,6 +1,6 @@
 .dashboard__container{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
 }
 
@@ -82,12 +82,10 @@ logo-template.user_picture [slot="logo__icon"] {
 }
 
 .sidebar__items{
-    /* border: 1px solid purple; */
     height: 60%;
 }
 
 app-button.sidebar__button{
-    /* --button-border: 1px solid red; */
     --button-font-size: 14px;
     --button-justify: start;
     width: 100%;
@@ -95,7 +93,6 @@ app-button.sidebar__button{
 
 .sidebar__items ul{
     height: 100%;
-    /* border: 1px solid red; */
     margin: 0;
     padding: 16px;
     display: flex;
@@ -105,7 +102,6 @@ app-button.sidebar__button{
 
 .sidebar__items li{
     width: 100%;
-    border: 1px solid purple;
     border-radius: 8px;
     list-style: none;
     display: flex;
@@ -143,13 +139,12 @@ app-button.logout__button{
     --button-justify: start;
     --button-font-size: 14px;
     --button-color: #e7000b;
-    /* --button-border: 1px solid #e7000b; */
     --button-padding: 8px 12px;
 }
 
 .dashboard__page{
-    border: 1px solid purple;
     margin-left: 19%;
     width: 81%;
     padding: 32px;
+    background: #F9FAFB;
 }

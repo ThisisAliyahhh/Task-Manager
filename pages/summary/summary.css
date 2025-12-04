@@ -1,11 +1,5 @@
-body{
-    width: 100%;
-}
-
 .summary-page{
-    width: 79%;
-    margin-left: 19%;
-    padding: 32px;
+    width: 100%;
     background: #F9FAFB;
 }
 

@@ -1,11 +1,5 @@
-body{
-    width: 100%;
-    padding: 32px;
-}
-
 .task-page{
-    width: 79%;
-    margin-left: 19%;
+    width: 100%;
     background: #F9FAFB;
     border: 1px solid #e2e8f0;
     border-radius: 8px;
@@ -14,6 +8,7 @@ body{
 
 .task-page__heading{
     /* background: pink; */
+    border-bottom: 1px solid #e2e8f0;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -26,6 +21,7 @@ body{
 }
 
 .task___heading__description{
+    color: #6a7282;
     font-size: 14px;
 }
 
@@ -46,7 +42,7 @@ body{
     border: 1px solid #e2e8f0;
     border-radius: 8px;
     background: #f3f4f6;
-    margin-bottom: 24px;
+    margin: 24px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="/assets/CSS/reset.css" />
+<link rel="stylesheet" href="/pages/community/community.css" />
+<section class="community-page">
+  <div class="community-page__heading">
+    <logo-template class="community-page__heading__icon">
+      <svg
+        slot="logo__icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-users h-5 w-5 flex-shrink-0"
+        aria-hidden="true"
+      >
+        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+        <path d="M16 3.128a4 4 0 0 1 0 7.744" />
+        <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+        <circle cx="9" cy="7" r="4" />
+      </svg>
+    </logo-template>
+    <div class="community__heading">
+      <h2 class="community__heading__title">Community Board</h2>
+      <p class="community___heading__description">
+        Collaborate with your team
+      </p>
+    </div>
+  </div>
+
+  <div class="community-page__body">
+
+    <form action="#" class="community__posts__form">
+        <div class="community__posts__box">
+            <div class="community__user__post-info">
+                <logo-template class="community__user__post-info__logo">
+                    <p slot="logo__icon">JD</p>
+                </logo-template>
+                <textarea class="community__user__post-info__textarea" placeholder="Share an update, ask for help, or celebrate a win... (Mention @comsq to get AI help)"></textarea>
+            </div>
+
+            <div class="community__posts__box__button__container">
+                <app-button class="community__posts__box__button deactive">
+                    <svg slot="button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send h-4 w-4 mr-2" aria-hidden="true"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
+                    <p slot="button-label">Post</p>
+                </app-button>
+            </div>
+        </div>
+    </form>
+
+    <div class="community__posts">
+      <div class="community__posts__content">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-message-square h-12 w-12 mx-auto mb-3 text-gray-400"
+          aria-hidden="true"
+        >
+          <path
+            d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"
+          />
+        </svg>
+        <p>No posts yet. Be the first to share something!</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script type="module" src="/components/button/button.js"></script>
+<script type="module" src="/components/logo/logo.js"></script>
+<script type="module" src="/pages/community/community.js"></script>

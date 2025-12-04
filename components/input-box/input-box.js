@@ -8,7 +8,7 @@ inputTemplates.innerHTML = `
     </style>
     <div class="input-box__container">
         <label>
-            <span class="label">Label</span>
+            <span class="label"></span>
             <div class="input__container">
                 <slot name="input-icon"></slot>
                 <input type="text" />
